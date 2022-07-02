@@ -1,0 +1,31 @@
+<%- include("partials/head") %>
+<div class="container">
+  <div class="card my-5" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-title">
+        r/<%= name.toLowerCase().split(" ").join("") %>
+      </h5>
+      <h6 class="card-subtitle mb-2 text-muted">
+        <%= subscribers %> subscirbers
+      </h6>
+      <p class="card-text"><%= description %></p>
+    </div>
+  </div>
+
+  <p><strong>Posts:</strong></p>
+  <% posts.forEach(post => { %>
+
+  <div class="card my-2" style="max-width: 32rem">
+    <div class="card-body">
+      <h5 class="card-title"><%= post.title%></h5>
+      <p class="card-text">by <strong><%= post.author %></strong></p>
+    </div>
+    <%if(post.img){%><img
+      src="<%=post.img%>"
+      class="card-img-bottom"
+      alt="..."
+    /><% } %>
+  </div>
+  <% }) %>
+</div>
+<%- include("partials/footer") %>

@@ -1,0 +1,86 @@
+<%- include("partials/head") %>
+<div class="container">
+    <h1>Hi! This is an Express demo app with Reddit as its inspiration</h1>
+    <p>Links to subreddits</p>
+    <ul>
+        <li><a href="/r/soccer">Soccer</a></li>
+        <li><a href="/r/chickens">Chickens</a></li>
+        <li><a href="/r/mightyharvest">Mighty Harvest</a></li>
+    </ul>
+    <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" colspan="3">Things I learned in this demo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>NodeJS</td>
+      <td>Installing Node, Node REPL, Node Process & argv</td>
+   
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Express</td>
+      <td>Express installation, requiring express (app = express())</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Nodemon</td>
+      <td>Starting Nodemon</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>NPM</td>
+      <td>Package.json and dependencies</td>
+    </tr>    
+    <tr>
+      <th scope="row">5</th>
+      <td>app.listen()</td>
+      <td>Listening to port/serving</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Express Request and Response params</td>
+      <td>req.params, res.send, res.render</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Express routing</td>
+      <td>get, post, use</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Express Path</td>
+      <td>requiring path, path.join(__dirname, "folder name")</td>
+    </tr>  
+    <tr>
+      <th scope="row">9</th>
+      <td>app.set()</td>
+      <td>view engine, EJS, EJS alternatives like Pug, Handlebars, and Nunjucks</td>
+    </tr>  
+    <tr>
+      <th scope="row">10</th>
+      <td>HTML Templating</td>
+      <td>Partials and Views</td>
+    </tr> 
+    <tr>
+      <th scope="row">11</th>
+      <td>Serving static assets</td>
+      <td>app.use(express.static(path.join(__dirname, "public")))</td>
+    </tr>  
+    <tr>
+      <th scope="row">12</th>
+      <td>Passing data to templates through render</td>
+      <td>res.render("view-page", {data})</td>
+    </tr> 
+    <tr>
+      <th scope="row">13</th>
+      <td>Deployment</td>
+      <td>Deploying an Express app through Netlify</td>
+    </tr> 
+  </tbody>
+</table>
+</div>
+<%- include("partials/footer") %>
